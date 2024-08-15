@@ -10,7 +10,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(20)
     }
 }
 
@@ -32,6 +32,7 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     runtimeOnly("com.h2database:h2")
 
+    implementation("org.springframework.boot:spring-boot-starter-security:3.3.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("org.springframework.boot:spring-boot-starter-web")

@@ -1,7 +1,7 @@
-package com.ys.notes.controllers;
+package com.ys.notes.controller;
 
-import com.ys.notes.models.Note;
-import com.ys.notes.services.NoteService;
+import com.ys.notes.model.Note;
+import com.ys.notes.service.NoteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;

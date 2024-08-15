@@ -1,7 +1,7 @@
-package com.ys.notes.services;
+package com.ys.notes.service;
 
 import com.ys.notes.repository.NoteRepository;
-import com.ys.notes.models.Note;
+import com.ys.notes.model.Note;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.ys.notes.models;
+package com.ys.notes.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

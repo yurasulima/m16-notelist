@@ -1,6 +1,6 @@
 package com.ys.notes;
 
-import org.flywaydb.core.Flyway;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class NotesApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(NotesApplication.class, args);
     }
 }
