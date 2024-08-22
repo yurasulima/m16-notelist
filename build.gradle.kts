@@ -26,8 +26,8 @@ repositories {
 
 dependencies {
 
-
-
+    implementation("org.mapstruct:mapstruct:1.6.0")
+    annotationProcessor("org.mapstruct:mapstruct-processor:1.6.0")
 
     implementation("org.flywaydb:flyway-core")
     runtimeOnly("com.h2database:h2")
