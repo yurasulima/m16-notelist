@@ -23,22 +23,10 @@ public class NoteService {
     public List<Note> listAll() {
         return noteRepository.findAll();
     }
-    public Note add(Note note) {
-        noteRepository.save(note);
-        return note;
-    }
 
     public void deleteById(long id) {
         if (noteRepository.existsById(id)) {
             noteRepository.deleteById(id);
-        } else {
-            throw new IllegalArgumentException();
-        }
-    }
-
-    public void update(Note note) {
-        if (noteRepository.existsById(note.getId())) {
-            noteRepository.save(note);
         } else {
             throw new IllegalArgumentException();
         }
@@ -65,9 +53,5 @@ public class NoteService {
         return noteMapper.toNoteResponse(
                 noteRepository.findById(id).orElseThrow(BadRequestException::new)
         );
-    }
-
-    public Note getById(long id) {
-        return noteRepository.findById(id).orElseThrow(IllegalArgumentException::new);
     }
 }
